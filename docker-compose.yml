@@ -4,9 +4,9 @@ volumes:
 services:
   wg-easy:
     environment:
-      - PORT=51821
-      - HOST=vpn.ilova.app
-      - INSECURE=false
+      - PORT=${PORT}
+      - HOST=${HOST}
+      - INSECURE=${INSECURE}
 
     image: ghcr.io/wg-easy/wg-easy:15
     container_name: wg-easy
